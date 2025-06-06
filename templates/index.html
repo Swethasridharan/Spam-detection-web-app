@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Detection</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        input, button { padding: 10px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Spam Detection System</h1>
+    <form action="/predict" method="post">
+        <input type="text" name="message" placeholder="Enter a message..." required>
+        <button type="submit">Check</button>
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
